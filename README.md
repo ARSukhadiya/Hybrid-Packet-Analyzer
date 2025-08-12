@@ -27,19 +27,21 @@ A high-performance network packet sniffer and analyzer that combines the speed o
 - **Export Capabilities**: Save analysis results and visualizations
 
 ## 🎬 Live Demonstration
-<video controls src="File Explorer - Hybrid-Packet-Analyzer - File Explorer - 12 August 2025.mp4" title="Title"></video>
 
-[![Hybrid Packet Analyzer Demo](https://img.youtube.com/vi/FzPl5CWcp8/maxresdefault.jpg)](https://www.youtube.com/watch?v=-FzPl5CWcp8)
+### **Watch the Hybrid Packet Analyzer in Action**
+
+[![Hybrid Packet Analyzer Demo](https://img.youtube.com/vi/FzPl5CWcp8/maxresdefault.jpg)](https://www.youtube.com/watch?v=FzPl5CWcp8)
 
 *Click the image above to watch the full demo*
 
 **Demo Highlights:**
 - ⚡ Real-time packet capture and analysis
-- 🖥️ Windows interface auto-detection
-- 📊 Live statistical analysis
-- 📈 Data visualization generation
-- 🔄 C++ and Python hybrid architecture
-- 🛠️ Interactive command-line interface
+- 🖥️ Windows interface auto-detection and optimization
+- 📊 Live statistical analysis with protocol breakdown
+- 📈 Data visualization generation (charts and graphs)
+- 🔄 C++ and Python hybrid architecture demonstration
+- 🛠️ Interactive command-line interface walkthrough
+- 🐛 Error handling and troubleshooting features
 
 ---
 
@@ -224,11 +226,46 @@ python src/python/packet_analyzer.py --mode scapy --count 10
 - **"Interface not found"**: Use `windows_interface_helper.py` to list interfaces
 - **"C++ library not found"**: Run `python build.py` to build C++ components
 - **"No packets captured"**: Ensure network activity and try different interfaces
+- **"Error opening adapter"**: Use specific interface names or auto-detection
 
 #### **Linux/macOS**
 - **"Permission denied"**: Run with `sudo`
 - **"libpcap not found"**: Install `libpcap-dev` package
 - **"Interface not found"**: Use `ip addr` to list interfaces
+
+### **Windows-Specific Setup**
+
+#### **Prerequisites for Windows**
+1. **Install Python 3.7+**: Download from [python.org](https://www.python.org/downloads/)
+2. **Install Visual Studio Build Tools**: Download from [Microsoft](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
+3. **Install CMake**: Download from [cmake.org](https://cmake.org/download/)
+4. **Install Npcap**: Download from [npcap.com](https://npcap.com/)
+
+#### **Windows Installation Steps**
+```cmd
+# 1. Clone the repository
+git clone <repository-url>
+cd Hybrid-Packet-Analyzer
+
+# 2. Install Python dependencies
+pip install -r requirements.txt
+
+# 3. Build the project
+python build.py
+
+# 4. Test the installation
+python test_installation.py
+```
+
+#### **Windows Usage Tips**
+- **Always run as Administrator** for packet capture
+- **Use `"any"` for interface** to enable auto-detection
+- **Use the interface helper** to find working interfaces:
+  ```cmd
+  python windows_interface_helper.py
+  ```
+- **Common working interfaces**: `"Wi-Fi"`, `"Ethernet"`, `"Local Area Connection"`
+- **Generate network traffic** by browsing the web or pinging servers
 
 ### **Performance Tips**
 
@@ -291,8 +328,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**📖 For detailed Windows instructions, see [WINDOWS_GUIDE.md](WINDOWS_GUIDE.md)**
-
 **🛠️ For Windows interface troubleshooting, use:**
 ```cmd
 python windows_interface_helper.py
@@ -302,3 +337,5 @@ python windows_interface_helper.py
 ```cmd
 python src/python/packet_analyzer.py
 ```
+
+**📖 For detailed Windows instructions, see the Windows-Specific Setup section above**
