@@ -26,11 +26,10 @@ A high-performance network packet sniffer and analyzer that combines the speed o
 - **Performance Monitoring**: Real-time capture statistics
 - **Export Capabilities**: Save analysis results and visualizations
 
-## 🎬 Live Demonstration
-
 ### **Watch the Hybrid Packet Analyzer in Action**
+<video controls src="File Explorer - Hybrid-Packet-Analyzer - File Explorer - 12 August 2025.mp4" title="Title"></video>
 
-[![Hybrid Packet Analyzer Demo](https://img.youtube.com/vi/FzPl5CWcp8/maxresdefault.jpg)](https://www.youtube.com/watch?v=FzPl5CWcp8)
+[![Hybrid Packet Analyzer Demo](https://img.youtube.com/vi/FzPl5CWcp8/maxresdefault.jpg)](https://www.youtube.com/watch?v=-FzPl5CWcp8)
 
 *Click the image above to watch the full demo*
 
